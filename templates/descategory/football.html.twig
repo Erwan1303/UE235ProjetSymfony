@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Football
+{% endblock %}
+
+{% block body %}
+	<a href="{{ path('article_index') }}" class="btn btn-primary ">Retour Accueil</a>
+	<h1>Catégorie Football
+	</h1>
+
+	<div class="row">
+		<div class="col">
+			<div class="card">
+				<img src=" {{ asset('img/boli.jpg') }}" class="img-fluide" alt="Basile Boli"/>
+				<div class="card-body">
+					<h4>
+						Basile Boli - Le but contre le Milan AC</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga aliquam, culpa illum ratione, commodi fugiat unde repudiandae vel nostrum excepturi, placeat libero asperiores. Vitae voluptas sequi atque qui deleniti.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src=" {{ asset('img/cantona.jpg') }}" class="img-fluide" alt="Eric Cantona"/>
+				<div class="card-body">
+					<h4>
+						Eric Cantona - Le King</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga aliquam, culpa illum ratione, commodi fugiat unde repudiandae vel nostrum excepturi, placeat libero asperiores. Vitae voluptas sequi atque qui deleniti.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src=" {{ asset('img/maradona-1986-worldcup-fina.jpg') }}" class="img-fluide" alt="Diego Maradonna"/>
+				<div class="card-body">
+					<h4>
+						Diego Maradona - El Pibe de Oro</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga aliquam, culpa illum ratione, commodi fugiat unde repudiandae vel nostrum excepturi, placeat libero asperiores. Vitae voluptas sequi atque qui deleniti.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

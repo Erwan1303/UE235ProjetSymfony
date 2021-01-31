@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion
+{% endblock %}
+
+{% block body %}
+	<h1>Connexion</h1>
+
+	{% if error %}
+		<div class="alert alert-danger">
+
+			{{ error.message}}
+		</div>
+	{% endif %}
+
+	{{ form_start(formView)}}
+
+	{{ form_widget(formView)}}
+
+	<button type="submit" class="btn btn-success">Connexion</button>
+	<h3>Les utilisateurs sont
+	</h3>
+	<ul>
+		<li>admin@gamail.com</li>
+		<li>user0@gamail.com</li>
+		<li>user1@gamail.com</li>
+		<li>user2@gamail.com</li>
+		<li>user3@gamail.com</li>
+		<li>user4@gamail.com</li>
+	</ul>
+	<h3>Le mot de passe est le même pour tous à savoir : password
+	</h3>
+
+	{{ form_end(formView)}}
+{% endblock %}

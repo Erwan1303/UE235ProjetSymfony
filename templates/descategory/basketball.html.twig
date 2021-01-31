@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Basket Ball
+{% endblock %}
+
+{% block body %}
+	<a href="{{ path('article_index') }}" class="btn btn-primary ">Retour Accueil</a>
+	<h1>Catégorie Basket Ball
+	</h1>
+
+	<div class="row">
+		<div class="col">
+			<div class="card">
+				<img src=" {{ asset('img/jordan.jpg') }}" class="img-fluide" alt="Jordan"/>
+				<div class="card-body">
+					<h4>
+						Mickael Jordan
+					</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga aliquam, culpa illum ratione, commodi fugiat unde repudiandae vel nostrum excepturi, placeat libero asperiores. Vitae voluptas sequi atque qui deleniti.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src=" {{ asset('img/shaq.jpg') }}" class="img-fluide" alt="Shaq"/>
+				<div class="card-body">
+					<h4>
+						Shaquil O'Neil</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga aliquam, culpa illum ratione, commodi fugiat unde repudiandae vel nostrum excepturi, placeat libero asperiores. Vitae voluptas sequi atque qui deleniti.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src=" {{ asset('img/parker.jpg') }}" class="img-fluide" alt="Parker"/>
+				<div class="card-body">
+					<h4>
+						Tony Parker</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga aliquam, culpa illum ratione, commodi fugiat unde repudiandae vel nostrum excepturi, placeat libero asperiores. Vitae voluptas sequi atque qui deleniti.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+
+<div class="card-header" style="width: 18rem;">
+	{{ form_widget(form) }}
+</div>
+<div class="card-header" style="width: 18rem;">
+	<button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+</div>
+{{ form_end(form) }}

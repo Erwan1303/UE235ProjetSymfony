@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="{{ path('article_index') }}">Notre super blog sur le sport
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarColor02">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{{ path('football') }}">
+					Football
+					<i class="fas fa-futbol"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ path('rugby') }}">Rugby
+					<i class="fas fa-football-ball"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ path('basketball') }}">Basket Ball
+					<i class="fas fa-basketball-ball"></i>
+				</a>
+			</li>
+			<!--	{{ render(controller('App\\Controller\\CategoryController::renderMenuList') )}} -->
+		</ul>
+
+		<li class="form-inline my-2 my-lg-0">
+			<a href="{{ path('category_index') }}" class="btn btn-primary ">Liste des catégories</a>
+		</li>
+		<li class="form-inline my-2 my-lg-0">
+			<a href="{{ path('security_login') }}" class="btn btn-success">
+				Login
+			</a>
+		</li>
+		<li class="form-inline my-2 my-lg-0">
+			<a href="" class="btn btn-warning">
+				LoginOut
+			</a>
+		</li>
+
+	</div>
+</nav>
